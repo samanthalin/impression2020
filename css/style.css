@@ -18,60 +18,120 @@ html body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-family: galano_grotesqueregular; }
-  html body header nav {
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0; }
-    html body header nav .frame {
-      width: 90%;
-      margin: auto; }
-  html body header .mobile-nav {
-    height: 50px;
-    padding: 10px 0; }
-    html body header .mobile-nav .frame {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      height: 100%;
-      align-items: center; }
-      html body header .mobile-nav .frame .logo {
-        height: 100%; }
-        html body header .mobile-nav .frame .logo img {
+  html body header {
+    padding-top: 50px; }
+    html body header nav {
+      width: 100%;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1234; }
+      html body header nav .frame {
+        width: 90%;
+        margin: auto; }
+      @media screen and (min-width: 992px) {
+        html body header nav {
+          padding-top: 0px; } }
+    html body header .mobile-nav {
+      height: 50px;
+      padding: 10px 0; }
+      html body header .mobile-nav .frame {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 100%;
+        align-items: center; }
+        html body header .mobile-nav .frame .logo {
           height: 100%; }
+          html body header .mobile-nav .frame .logo img {
+            height: 100%; }
+      @media screen and (min-width: 992px) {
+        html body header .mobile-nav {
+          display: none; } }
+    html body header .desktop-nav {
+      display: none;
+      height: 70px;
+      font-size: 14px; }
+      html body header .desktop-nav .frame {
+        max-width: 1015px;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center; }
+        html body header .desktop-nav .frame .logo {
+          position: absolute;
+          top: 5px;
+          left: 50%;
+          transform: translateX(-50%); }
+        html body header .desktop-nav .frame .nav-left, html body header .desktop-nav .frame .nav-right {
+          width: calc(50% - 110px); }
+          html body header .desktop-nav .frame .nav-left ul, html body header .desktop-nav .frame .nav-right ul {
+            display: flex;
+            justify-content: space-between; }
+            html body header .desktop-nav .frame .nav-left ul li, html body header .desktop-nav .frame .nav-right ul li {
+              padding: 5px;
+              text-align: center; }
+              html body header .desktop-nav .frame .nav-left ul li a, html body header .desktop-nav .frame .nav-right ul li a {
+                color: black; }
+                html body header .desktop-nav .frame .nav-left ul li a:hover, html body header .desktop-nav .frame .nav-right ul li a:hover {
+                  color: #2ca88c; }
+      @media screen and (min-width: 992px) {
+        html body header .desktop-nav {
+          display: block; } }
     @media screen and (min-width: 992px) {
-      html body header .mobile-nav {
+      html body header {
+        padding-top: 70px; } }
+
+html body .banner {
+  position: relative; }
+  html body .banner .mobile-banner {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      html body .banner .mobile-banner {
         display: none; } }
-  html body header .desktop-nav {
+  html body .banner .desktop-banner {
+    width: 100%;
     display: none;
-    height: 70px;
-    font-size: 14px; }
-    html body header .desktop-nav .frame {
-      max-width: 1015px;
-      display: flex;
-      justify-content: space-between;
-      height: 100%;
-      align-items: center; }
-      html body header .desktop-nav .frame .logo {
-        position: absolute;
-        top: 5px;
-        left: 50%;
-        transform: translateX(-50%); }
-      html body header .desktop-nav .frame .nav-left, html body header .desktop-nav .frame .nav-right {
-        width: calc(50% - 110px); }
-        html body header .desktop-nav .frame .nav-left ul, html body header .desktop-nav .frame .nav-right ul {
-          display: flex;
-          justify-content: space-between; }
-          html body header .desktop-nav .frame .nav-left ul li, html body header .desktop-nav .frame .nav-right ul li {
-            padding: 5px;
-            text-align: center; }
-            html body header .desktop-nav .frame .nav-left ul li a, html body header .desktop-nav .frame .nav-right ul li a {
-              color: black; }
-              html body header .desktop-nav .frame .nav-left ul li a:hover, html body header .desktop-nav .frame .nav-right ul li a:hover {
-                color: #2ca88c; }
-    @media screen and (min-width: 992px) {
-      html body header .desktop-nav {
+    margin-top: 20px; }
+    @media screen and (min-width: 768px) {
+      html body .banner .desktop-banner {
         display: block; } }
+  html body .banner p.slogan {
+    font-size: 18px;
+    color: #39358c;
+    font-family: "galano_grotesquesemibold";
+    width: 90%;
+    margin: auto;
+    margin-top: 10px; }
+    @media screen and (min-width: 768px) {
+      html body .banner p.slogan {
+        width: auto;
+        position: absolute;
+        font-size: 2vw;
+        left: 12vw;
+        top: 54vw;
+        line-height: 2em; } }
+html body .mobile-program .frame {
+  width: 90%;
+  margin: auto;
+  text-align: center; }
+  html body .mobile-program .frame .seperator {
+    display: block;
+    margin: auto;
+    width: 40px;
+    margin-top: 20px; }
+  html body .mobile-program .frame .title {
+    font-family: "galano_grotesquesemibold";
+    color: #90684b;
+    font-size: 36px; }
+  html body .mobile-program .frame .video-wrap {
+    margin-top: 20px; }
+  html body .mobile-program .frame .button {
+    background-color: #39358c;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px; }
 
 /*# sourceMappingURL=style.css.map */

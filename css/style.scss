@@ -11,6 +11,8 @@
   font-family: "futura_meduim";
   src: url("../fonts/futura medium bt.ttf");
 }
+$galano: 'galano_grotesqueregular';
+$galano-semibold: 'galano_grotesquesemibold';
 $theme-green: #2ca88c;
 $theme-blue: #39358c;
 $theme-brown: #90684b;
@@ -29,15 +31,20 @@ html{
     	-webkit-font-smoothing: antialiased;
     	font-family: galano_grotesqueregular;
 		header{
+			padding-top: 50px;
 			nav{
 				width: 100%;
 				background-color: white;
 				position: fixed;
 				top: 0;
 				left: 0;
+				z-index: 1234;
 				.frame{
 					width: 90%;
 					margin: auto;
+				}
+				@media screen and (min-width: 992px) {
+					padding-top: 0px;
 				}
 			}
 			.mobile-nav{
@@ -96,6 +103,75 @@ html{
 				}
 				@media screen and (min-width: 992px) {
 					display: block;
+				}
+			}
+			@media screen and (min-width: 992px){
+				padding-top: 70px;
+			}
+		}//header
+	}
+}
+
+html{
+	body{
+		.banner{
+			position: relative;
+			.mobile-banner{
+				width: 100%;
+				@media screen and (min-width: 768px) {
+					display: none;
+				}
+			}
+			.desktop-banner{
+				width: 100%;
+				display: none;
+				margin-top: 20px;
+				@media screen and (min-width: 768px){
+					display: block;
+				}
+			}
+			p.slogan{
+				font-size: 18px;
+				color: $theme-blue;
+				font-family: $galano-semibold;
+				width: 90%;
+				margin: auto;
+				margin-top: 10px;
+				@media screen and (min-width: 768px){
+					width: auto;
+					position: absolute;
+					font-size: 2vw;
+					left: 12vw;
+					top: 54vw;
+					line-height: 2em;
+				}
+			}
+		}//banner
+		.mobile-program{
+			.frame{
+				width: 90%;
+				margin: auto;
+				text-align: center;
+				.seperator{
+					display: block;
+					margin: auto;
+					width: 40px;
+					margin-top: 20px;
+				}
+				.title{
+					font-family: $galano-semibold;
+					color: $theme-brown;
+					font-size: 36px;
+				}
+				.video-wrap{
+					margin-top: 20px;
+				}
+				.button{
+					background-color: $theme-blue;
+					color: white;
+					display: inline-block;
+					margin-top: 10px;
+					padding: 10px 20px;
 				}
 			}
 		}
