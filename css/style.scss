@@ -519,6 +519,7 @@ html{
 html{
 	body#page-about{
 		min-height: 100vh;
+		position: relative;
 		.title{
 			padding: 40px 0;
 			position: relative;
@@ -590,16 +591,16 @@ html{
 						font-family: $galano-semibold;
 					}
 				}
+				@media screen and (min-width: 768px) {
+					width: 100%;
+					margin: 0;
+				}
 			}
 			@media screen and (min-width: 768px) {
-				margin: 27% 5% 0 22%;
-				padding-bottom: 20vw;
-				@media screen and (min-width: 1400px) {
-					margin: auto;
-					margin-top: 330px;
-					padding-left: 42px;
-					padding-bottom: 300px;
-				}
+				margin-top: 27%;
+				margin-left: 25%;
+				padding-right: 5%;
+				padding-bottom: 27vh;
 			}	
 		}
 		footer{

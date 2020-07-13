@@ -445,7 +445,8 @@ html body#page-home .sponsor {
       top: -190px; } }
 
 html body#page-about {
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative; }
   html body#page-about .title {
     padding: 40px 0;
     position: relative;
@@ -513,17 +514,16 @@ html body#page-about {
         line-height: 1.5em; }
         html body#page-about .content .frame p span {
           font-family: "galano_grotesquesemibold"; }
+      @media screen and (min-width: 768px) {
+        html body#page-about .content .frame {
+          width: 100%;
+          margin: 0; } }
     @media screen and (min-width: 768px) {
       html body#page-about .content {
-        margin: 27% 5% 0 22%;
-        padding-bottom: 20vw; } }
-  @media screen and (min-width: 768px) and (min-width: 1400px) {
-    html body#page-about .content {
-      margin: auto;
-      margin-top: 330px;
-      padding-left: 42px;
-      padding-bottom: 300px; } }
-
+        margin-top: 27%;
+        margin-left: 25%;
+        padding-right: 5%;
+        padding-bottom: 27vh; } }
   html body#page-about footer {
     position: absolute;
     bottom: 0;
