@@ -16,6 +16,18 @@ $galano-semibold: 'galano_grotesquesemibold';
 $theme-green: #2ca88c;
 $theme-blue: #39358c;
 $theme-brown: #90684b;
+
+@mixin seperator{
+	width: 67px;
+	display: block;
+	margin: auto;
+}
+@mixin homepage-title{
+	font-family: $galano-semibold;
+	color: $theme-brown;
+	font-size: 36px;
+	margin: 36px 0;
+}
 *{
 	box-sizing: border-box;
 }
@@ -140,10 +152,18 @@ html{
 				@media screen and (min-width: 768px){
 					width: auto;
 					position: absolute;
-					font-size: 2vw;
-					left: 12vw;
-					top: 54vw;
+					font-size: 1.9vw;
+					left: 14vw;
+					top: 50vw;
 					line-height: 2em;
+					@media screen and (min-width: 1200px) {
+					
+						@media screen and (min-width: 1500px){
+							font-size: 25px;
+							left: 23vw;
+							top: 47vw;
+						}
+					}
 				}
 			}
 		}//banner
@@ -159,9 +179,8 @@ html{
 					margin-top: 20px;
 				}
 				.title{
-					font-family: $galano-semibold;
-					color: $theme-brown;
-					font-size: 36px;
+					@include homepage-title;
+					margin: 0;
 				}
 				.video-wrap{
 					margin-top: 20px;
@@ -173,6 +192,97 @@ html{
 					margin-top: 10px;
 					padding: 10px 20px;
 				}
+			}
+			@media screen and (min-width: 992px){
+				display: none;
+			}
+		}//mobile-program
+		.program{
+			display: none;
+			text-align: center;
+			.seperator{
+				@include seperator;
+			}
+			.title{
+				font-family: $galano-semibold;
+				color: $theme-brown;
+				font-size: 36px;
+				margin: 36px 0;
+			}
+			.video-wrap{
+				width: 578px;
+				height: 325px;
+				margin: auto;
+				position: relative;
+				.deco-right{
+					position: absolute;
+					right: -8vw;
+					top: 0;
+					border: 1px solid $theme-green;
+					background-image: url(../image/deco_program.png);
+					background-size: contain;
+					background-repeat-x: repeat;
+					width: 8vw;
+					height: 100%;
+				}
+				.deco-lb{
+					width: 128px;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					transform: translateX(-100%);
+					z-index: 1;
+				}
+				.deco-left{
+					height: 311px;
+					border: 1px solid $theme-green;
+					width: calc(50vw - 289px - 128px);
+					position: absolute;
+					left: -128px;
+					transform: translateX(-100%);
+					background-image: url(../image/deco_program.png);
+					background-size: contain;
+					background-repeat-x: repeat;
+					top: -90px;
+					z-index: 0;
+				}
+				.button{
+					background-color: $theme-blue;
+					color: white;
+					width: 185px;
+					display: block;
+					margin: auto;
+					height: 50px;
+					line-height: 50px;
+					font-size: 24px;
+					margin-top: 30px;
+					margin-bottom: 55px;
+					transition: all 0.2s ease;
+					&:hover{
+						transform: scale(1.05);
+					}
+				}
+			}
+			@media screen and (min-width: 992px){
+				display: block;
+			}
+		}//program
+		.ticket{
+			.frame{
+				width: 90%;
+				margin: auto;
+				.seperator{
+					@include seperator;
+					width: 40px;
+					margin-top: 20px;
+				}
+				.content-wrap{
+					.title{
+						@include homepage-title;
+						text-align: center;
+						margin: 0;
+					}
+				}	
 			}
 		}
 	}
