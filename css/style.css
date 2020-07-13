@@ -72,6 +72,9 @@ html body {
                 color: black; }
                 html body header .desktop-nav .frame .nav-left ul li a:hover, html body header .desktop-nav .frame .nav-right ul li a:hover {
                   color: #2ca88c; }
+            html body header .desktop-nav .frame .nav-left ul .select, html body header .desktop-nav .frame .nav-right ul .select {
+              font-family: "galano_grotesquesemibold";
+              color: #2ca88c; }
       @media screen and (min-width: 992px) {
         html body header .desktop-nav {
           display: block; } }
@@ -440,5 +443,75 @@ html body#page-home .sponsor {
       position: absolute;
       left: calc(50% + 200px);
       top: -190px; } }
+
+html body#page-about {
+  min-height: 100vh; }
+  html body#page-about .title {
+    padding: 40px 0;
+    position: relative;
+    z-index: 1; }
+    html body#page-about .title .frame {
+      width: 90%;
+      margin: auto; }
+      html body#page-about .title .frame h1 {
+        font-family: "galano_grotesquesemibold";
+        color: #90684b;
+        font-size: 48px;
+        text-align: center;
+        font-size: 28px; }
+        @media screen and (min-width: 992px) {
+          html body#page-about .title .frame h1 {
+            font-size: 38px; } }
+      @media screen and (min-width: 768px) {
+        html body#page-about .title .frame {
+          width: fit-content;
+          margin: calc(75px + 1vw) 0 0 25%; } }
+    @media screen and (min-width: 768px) {
+      html body#page-about .title {
+        padding: 0; } }
+  html body#page-about .seperator {
+    border: 1px solid #2ca88c;
+    width: 100%;
+    height: 50px;
+    background-image: url(../image/deco_event_left.png);
+    background-size: 120% auto; }
+    @media screen and (min-width: 768px) {
+      html body#page-about .seperator {
+        display: none; } }
+  html body#page-about .decoration {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 75px; }
+    html body#page-about .decoration img {
+      width: 100%; }
+    @media screen and (min-width: 768px) {
+      html body#page-about .decoration {
+        display: block; } }
+  html body#page-about .content {
+    padding: 20px 0;
+    position: relative;
+    z-index: 1; }
+    html body#page-about .content .frame {
+      width: 90%;
+      margin: auto; }
+      html body#page-about .content .frame p {
+        line-height: 1.5em;
+        max-width: 780px; }
+        html body#page-about .content .frame p span {
+          font-family: "galano_grotesquesemibold"; }
+    @media screen and (min-width: 768px) {
+      html body#page-about .content {
+        margin: 27% 5% 0 22%;
+        padding-bottom: 20vw; } }
+  html body#page-about footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      html body#page-about footer {
+        position: relative; } }
 
 /*# sourceMappingURL=style.css.map */

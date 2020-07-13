@@ -13,6 +13,7 @@
 }
 $galano: 'galano_grotesqueregular';
 $galano-semibold: 'galano_grotesquesemibold';
+$futura: 'futura_meduim';
 $theme-green: #2ca88c;
 $theme-blue: #39358c;
 $theme-brown: #90684b;
@@ -31,6 +32,11 @@ $theme-brown: #90684b;
 	color: $theme-brown;
 	font-size: 36px;
 	margin: 36px 0;
+}
+@mixin page-title{
+	font-family: $galano-semibold;
+	color: $theme-brown;
+	font-size: 48px;
 }
 *{
 	box-sizing: border-box;
@@ -108,6 +114,10 @@ html{
 										color: $theme-green;
 									}
 								}
+							}
+							.select{
+								font-family: $galano-semibold;
+								color: $theme-green;
 							}
 						}		
 					}
@@ -505,4 +515,85 @@ html{
 			}
 		}//sponsor
 	}//body
+}
+html{
+	body#page-about{
+		min-height: 100vh;
+		.title{
+			padding: 40px 0;
+			position: relative;
+			z-index: 1;
+			.frame{
+				width: 90%;
+				margin: auto;
+				h1{
+					@include page-title;
+					text-align: center;
+					font-size: 28px;
+					@media screen and (min-width: 992px){
+						font-size: 38px;
+					}
+				}
+				@media screen and (min-width: 768px) {
+					width: fit-content;
+					margin: calc(75px + 1vw) 0 0 25%;
+				}
+			}//frame
+			@media screen and (min-width: 768px){
+				padding: 0;
+			}	
+		}//title
+		.seperator{
+			border: 1px solid $theme-green;
+			width: 100%;
+			height: 50px;
+			background-image: url(../image/deco_event_left.png);
+			background-size: 120% auto;
+			@media screen and (min-width: 768px) {
+				display: none;
+			}
+		}
+		.decoration{
+			display: none;
+			width: 100%;
+			position: absolute;
+			z-index: 0;
+			right: 0;
+			top: 75px;
+			img{
+				width: 100%;
+			}
+			@media screen and (min-width: 768px) {
+				display: block;
+			}
+		}
+		.content{
+			padding: 20px 0;
+			position: relative;
+			z-index: 1;
+			.frame{
+				width: 90%;
+				margin: auto;
+				p{
+					line-height: 1.5em;
+					max-width: 780px;
+					span{
+						font-family: $galano-semibold;
+					}
+				}
+			}
+			@media screen and (min-width: 768px) {
+				margin: 27% 5% 0 22%;
+				padding-bottom: 20vw;
+			}	
+		}
+		footer{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			@media screen and (min-width: 768px) {
+				position: relative;
+			}
+		}
+	}
 }
