@@ -528,7 +528,7 @@ html body#page-about {
     position: absolute;
     bottom: 0;
     width: 100%; }
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 768px) {
       html body#page-about footer {
         position: relative; } }
 
