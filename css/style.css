@@ -524,6 +524,11 @@ html body#page-about {
         margin-left: 25%;
         padding-right: 5%;
         padding-bottom: 27vh; } }
+  @media screen and (min-width: 768px) and (min-width: 1400px) {
+    html body#page-about .content {
+      margin-top: 335px;
+      margin-left: calc(50% - 347px); } }
+
   html body#page-about footer {
     position: absolute;
     bottom: 0;

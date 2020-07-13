@@ -601,6 +601,10 @@ html{
 				margin-left: 25%;
 				padding-right: 5%;
 				padding-bottom: 27vh;
+				@media screen and (min-width: 1400px) {
+					margin-top: 335px;
+					margin-left: calc(50% - 347px);
+				}
 			}	
 		}
 		footer{
