@@ -469,8 +469,8 @@ html body#page-about {
           margin: calc(75px + 1vw) 0 0 25%; } }
   @media screen and (min-width: 768px) and (min-width: 1400px) {
     html body#page-about .title .frame {
-      margin: auto;
-      margin-top: 115px; } }
+      margin-top: 115px;
+      margin-left: calc(50% - 345px); } }
 
     @media screen and (min-width: 768px) {
       html body#page-about .title {
@@ -526,7 +526,7 @@ html body#page-about {
         padding-bottom: 27vh; } }
   @media screen and (min-width: 768px) and (min-width: 1400px) {
     html body#page-about .content {
-      margin-top: 335px;
+      margin-top: 380px;
       margin-left: calc(50% - 347px); } }
 
   html body#page-about footer {

@@ -539,8 +539,8 @@ html{
 					width: fit-content;
 					margin: calc(75px + 1vw) 0 0 25%;
 					@media screen and (min-width: 1400px) {
-						margin: auto;
 						margin-top: 115px;
+						margin-left: calc(50% - 345px);
 					}
 				}
 			}//frame
@@ -602,7 +602,7 @@ html{
 				padding-right: 5%;
 				padding-bottom: 27vh;
 				@media screen and (min-width: 1400px) {
-					margin-top: 335px;
+					margin-top: 380px;
 					margin-left: calc(50% - 347px);
 				}
 			}	
