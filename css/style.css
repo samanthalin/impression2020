@@ -12,10 +12,6 @@
 
 html body {
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; }
-
-html body {
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-family: galano_grotesqueregular; }
   html body header {
@@ -82,22 +78,28 @@ html body {
     @media screen and (min-width: 992px) {
       html body header {
         padding-top: 70px; } }
+  html body footer {
+    background-color: #2ca88c;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 10px 0; }
 
-html body .banner {
+html body#page-home .banner {
   position: relative; }
-  html body .banner .mobile-banner {
+  html body#page-home .banner .mobile-banner {
     width: 100%; }
     @media screen and (min-width: 768px) {
-      html body .banner .mobile-banner {
+      html body#page-home .banner .mobile-banner {
         display: none; } }
-  html body .banner .desktop-banner {
+  html body#page-home .banner .desktop-banner {
     width: 100%;
     display: none;
     margin-top: 20px; }
     @media screen and (min-width: 768px) {
-      html body .banner .desktop-banner {
+      html body#page-home .banner .desktop-banner {
         display: block; } }
-  html body .banner p.slogan {
+  html body#page-home .banner p.slogan {
     font-size: 18px;
     color: #39358c;
     font-family: "galano_grotesquesemibold";
@@ -105,7 +107,7 @@ html body .banner {
     margin: auto;
     margin-top: 10px; }
     @media screen and (min-width: 768px) {
-      html body .banner p.slogan {
+      html body#page-home .banner p.slogan {
         width: auto;
         position: absolute;
         font-size: 1.9vw;
@@ -113,55 +115,62 @@ html body .banner {
         top: 50vw;
         line-height: 2em; } }
 @media screen and (min-width: 768px) and (min-width: 1200px) and (min-width: 1500px) {
-  html body .banner p.slogan {
+  html body#page-home .banner p.slogan {
     font-size: 25px;
     left: 23vw;
     top: 47vw; } }
 
-html body .mobile-program .frame {
+html body#page-home .mobile-program .frame {
   width: 90%;
   margin: auto;
   text-align: center; }
-  html body .mobile-program .frame .seperator {
+  html body#page-home .mobile-program .frame .seperator {
     display: block;
-    margin: auto;
     width: 40px;
-    margin-top: 20px; }
-  html body .mobile-program .frame .title {
+    margin: 20px auto; }
+    @media screen and (min-width: 992px) {
+      html body#page-home .mobile-program .frame .seperator {
+        width: 67px;
+        margin: 36px auto; } }
+  html body#page-home .mobile-program .frame .title {
     font-family: "galano_grotesquesemibold";
     color: #90684b;
     font-size: 36px;
     margin: 36px 0;
     margin: 0; }
-  html body .mobile-program .frame .video-wrap {
+  html body#page-home .mobile-program .frame .video-wrap {
     margin-top: 20px; }
-  html body .mobile-program .frame .button {
+  html body#page-home .mobile-program .frame .button {
     background-color: #39358c;
     color: white;
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px; }
 @media screen and (min-width: 992px) {
-  html body .mobile-program {
+  html body#page-home .mobile-program {
     display: none; } }
-html body .program {
+html body#page-home .program {
   display: none;
   text-align: center; }
-  html body .program .seperator {
-    width: 67px;
+  html body#page-home .program .seperator {
     display: block;
-    margin: auto; }
-  html body .program .title {
+    width: 40px;
+    margin: 20px auto; }
+    @media screen and (min-width: 992px) {
+      html body#page-home .program .seperator {
+        width: 67px;
+        margin: 36px auto; } }
+  html body#page-home .program .title {
     font-family: "galano_grotesquesemibold";
     color: #90684b;
     font-size: 36px;
     margin: 36px 0; }
-  html body .program .video-wrap {
+  html body#page-home .program .video-wrap {
     width: 578px;
     height: 325px;
     margin: auto;
     position: relative; }
-    html body .program .video-wrap .deco-right {
+    html body#page-home .program .video-wrap .deco-right {
       position: absolute;
       right: -8vw;
       top: 0;
@@ -171,14 +180,14 @@ html body .program {
       background-repeat-x: repeat;
       width: 8vw;
       height: 100%; }
-    html body .program .video-wrap .deco-lb {
+    html body#page-home .program .video-wrap .deco-lb {
       width: 128px;
       position: absolute;
       left: 0;
       bottom: 0;
       transform: translateX(-100%);
       z-index: 1; }
-    html body .program .video-wrap .deco-left {
+    html body#page-home .program .video-wrap .deco-left {
       height: 311px;
       border: 1px solid #2ca88c;
       width: calc(50vw - 289px - 128px);
@@ -190,38 +199,246 @@ html body .program {
       background-repeat-x: repeat;
       top: -90px;
       z-index: 0; }
-    html body .program .video-wrap .button {
-      background-color: #39358c;
-      color: white;
-      width: 185px;
-      display: block;
-      margin: auto;
-      height: 50px;
-      line-height: 50px;
-      font-size: 24px;
-      margin-top: 30px;
-      margin-bottom: 55px;
-      transition: all 0.2s ease; }
-      html body .program .video-wrap .button:hover {
-        transform: scale(1.05); }
-  @media screen and (min-width: 992px) {
-    html body .program {
-      display: block; } }
-html body .ticket .frame {
-  width: 90%;
-  margin: auto; }
-  html body .ticket .frame .seperator {
-    width: 67px;
+  html body#page-home .program .button {
+    background-color: #39358c;
+    color: white;
+    width: 175px;
     display: block;
     margin: auto;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: all 0.2s ease; }
+    html body#page-home .program .button:hover {
+      transform: scale(1.05); }
+  @media screen and (min-width: 992px) {
+    html body#page-home .program {
+      display: block; } }
+html body#page-home .ticket .seperator {
+  display: block;
+  width: 40px;
+  margin: 20px auto; }
+  @media screen and (min-width: 992px) {
+    html body#page-home .ticket .seperator {
+      width: 67px;
+      margin: 36px auto; } }
+html body#page-home .ticket .frame {
+  width: 90%;
+  margin: auto; }
+  html body#page-home .ticket .frame .content-wrap {
+    border: 1px solid #2ca88c;
+    padding: 50px 0 33px 0;
+    width: 100%;
+    max-width: 705px;
+    background-color: white;
+    margin: auto; }
+    html body#page-home .ticket .frame .content-wrap .title {
+      font-family: "galano_grotesquesemibold";
+      color: #90684b;
+      font-size: 36px;
+      margin: 36px 0;
+      text-align: center;
+      margin: 0; }
+    html body#page-home .ticket .frame .content-wrap .decription {
+      color: #39358c;
+      font-size: 24px;
+      text-align: center;
+      margin: 25px 0 36px 0; }
+    html body#page-home .ticket .frame .content-wrap .button {
+      display: block;
+      border: 1px solid #39358c;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 46px;
+      margin: auto;
+      transition: all 0.2s ease; }
+      html body#page-home .ticket .frame .content-wrap .button:hover {
+        background-color: #39358c;
+        color: white; }
+      html body#page-home .ticket .frame .content-wrap .button i {
+        font-size: 22px; }
+    @media screen and (min-width: 992px) {
+      html body#page-home .ticket .frame .content-wrap {
+        height: 245px; } }
+  @media screen and (min-width: 992px) {
+    html body#page-home .ticket .frame {
+      height: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../image/deco_ticket.png);
+      background-size: cover;
+      background-repeat-x: repeat;
+      border: 1px solid #2ca88c; } }
+html body#page-home .mobile-event .seperator {
+  display: block;
+  width: 40px;
+  margin: 20px auto; }
+  @media screen and (min-width: 992px) {
+    html body#page-home .mobile-event .seperator {
+      width: 67px;
+      margin: 36px auto; } }
+html body#page-home .mobile-event .frame {
+  width: 90%;
+  margin: auto; }
+  html body#page-home .mobile-event .frame .content-wrap {
+    border: 1px solid #2ca88c;
+    padding: 50px 10px 33px 10px;
+    width: 100%;
+    max-width: 705px;
+    background-color: white;
+    margin: auto; }
+    html body#page-home .mobile-event .frame .content-wrap .title {
+      font-family: "galano_grotesquesemibold";
+      color: #90684b;
+      font-size: 36px;
+      margin: 36px 0;
+      text-align: center;
+      margin: 0; }
+    html body#page-home .mobile-event .frame .content-wrap .decription {
+      color: #39358c;
+      font-size: 24px;
+      text-align: center;
+      margin: 25px 0 36px 0;
+      line-height: 1.3em; }
+    html body#page-home .mobile-event .frame .content-wrap .button {
+      display: block;
+      border: 1px solid #39358c;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 46px;
+      margin: auto;
+      transition: all 0.2s ease; }
+      html body#page-home .mobile-event .frame .content-wrap .button:hover {
+        background-color: #39358c;
+        color: white; }
+      html body#page-home .mobile-event .frame .content-wrap .button i {
+        font-size: 22px; }
+    @media screen and (min-width: 992px) {
+      html body#page-home .mobile-event .frame .content-wrap {
+        height: 245px; } }
+@media screen and (min-width: 1050px) {
+  html body#page-home .mobile-event {
+    display: none; } }
+html body#page-home .event {
+  display: none; }
+  html body#page-home .event .seperator {
+    display: block;
     width: 40px;
-    margin-top: 20px; }
-  html body .ticket .frame .content-wrap .title {
-    font-family: "galano_grotesquesemibold";
-    color: #90684b;
-    font-size: 36px;
-    margin: 36px 0;
-    text-align: center;
-    margin: 0; }
+    margin: 20px auto; }
+    @media screen and (min-width: 992px) {
+      html body#page-home .event .seperator {
+        width: 67px;
+        margin: 36px auto; } }
+    @media screen and (min-width: 992px) {
+      html body#page-home .event .seperator {
+        margin: 45px auto; } }
+  html body#page-home .event .frame {
+    width: 90%;
+    margin: auto;
+    height: 738px;
+    background-image: url(../image/deco_event.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative; }
+    html body#page-home .event .frame .content-wrap {
+      width: 625px;
+      height: 265px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      padding: 47px; }
+      html body#page-home .event .frame .content-wrap .title {
+        font-family: "galano_grotesquesemibold";
+        color: #90684b;
+        font-size: 36px;
+        margin: 36px 0;
+        text-align: center;
+        margin: 0; }
+      html body#page-home .event .frame .content-wrap .decription {
+        color: #39358c;
+        font-size: 24px;
+        text-align: center;
+        margin: 25px 0 36px 0;
+        line-height: 1.3em; }
+      html body#page-home .event .frame .content-wrap .button {
+        display: block;
+        border: 1px solid #39358c;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 46px;
+        margin: auto;
+        transition: all 0.2s ease; }
+        html body#page-home .event .frame .content-wrap .button:hover {
+          background-color: #39358c;
+          color: white; }
+        html body#page-home .event .frame .content-wrap .button i {
+          font-size: 22px; }
+    html body#page-home .event .frame .deco-right {
+      width: calc(95vw - 941px);
+      border: 1px solid #2ca88c;
+      position: absolute;
+      left: 926px;
+      top: 148px;
+      height: 267px;
+      background-image: url(../image/deco_event_right.png);
+      background-size: auto 100%;
+      background-repeat: repeat-x; }
+    html body#page-home .event .frame .deco-left {
+      background-image: url(../image/deco_event_left.png);
+      position: absolute;
+      bottom: 0;
+      left: -5vw;
+      width: calc(5vw + 406px);
+      height: 263px;
+      background-size: auto 100%;
+      background-repeat: repeat-x;
+      border: 1px solid #2ca88c; }
+  @media screen and (min-width: 1050px) {
+    html body#page-home .event {
+      display: block; } }
+html body#page-home .sponsor {
+  padding: 40px 0;
+  position: relative; }
+  html body#page-home .sponsor .cat {
+    margin-top: 45px; }
+    html body#page-home .sponsor .cat .title {
+      color: #90684b;
+      font-family: "galano_grotesquesemibold";
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1px; }
+    html body#page-home .sponsor .cat .logo-wrap {
+      width: 100%;
+      margin-top: 20px; }
+      html body#page-home .sponsor .cat .logo-wrap .logo {
+        display: block;
+        margin: auto;
+        padding: 20px 0; }
+        @media screen and (min-width: 768px) {
+          html body#page-home .sponsor .cat .logo-wrap .logo {
+            margin: 0 20px;
+            align-self: center; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html body#page-home .sponsor .cat .logo-wrap .logo {
+      margin: 0 40px; } }
+
+      @media screen and (min-width: 768px) {
+        html body#page-home .sponsor .cat .logo-wrap {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap; } }
+  @media screen and (min-width: 1050px) {
+    html body#page-home .sponsor .organized {
+      position: absolute;
+      left: calc(50% + 200px);
+      top: -190px; } }
 
 /*# sourceMappingURL=style.css.map */
