@@ -466,6 +466,11 @@ html body#page-about {
         html body#page-about .title .frame {
           width: fit-content;
           margin: calc(75px + 1vw) 0 0 25%; } }
+  @media screen and (min-width: 768px) and (min-width: 1400px) {
+    html body#page-about .title .frame {
+      margin: auto;
+      margin-top: 115px; } }
+
     @media screen and (min-width: 768px) {
       html body#page-about .title {
         padding: 0; } }
@@ -484,28 +489,41 @@ html body#page-about {
     position: absolute;
     z-index: 0;
     right: 0;
-    top: 75px; }
+    top: 75px;
+    max-width: 1400px; }
     html body#page-about .decoration img {
       width: 100%; }
     @media screen and (min-width: 768px) {
       html body#page-about .decoration {
         display: block; } }
+  @media screen and (min-width: 768px) and (min-width: 1400px) {
+    html body#page-about .decoration {
+      left: 50%;
+      transform: translateX(-50%); } }
+
   html body#page-about .content {
     padding: 20px 0;
     position: relative;
     z-index: 1; }
     html body#page-about .content .frame {
       width: 90%;
-      margin: auto; }
+      margin: auto;
+      max-width: 780px; }
       html body#page-about .content .frame p {
-        line-height: 1.5em;
-        max-width: 780px; }
+        line-height: 1.5em; }
         html body#page-about .content .frame p span {
           font-family: "galano_grotesquesemibold"; }
     @media screen and (min-width: 768px) {
       html body#page-about .content {
         margin: 27% 5% 0 22%;
         padding-bottom: 20vw; } }
+  @media screen and (min-width: 768px) and (min-width: 1400px) {
+    html body#page-about .content {
+      margin: auto;
+      margin-top: 330px;
+      padding-left: 42px;
+      padding-bottom: 300px; } }
+
   html body#page-about footer {
     position: absolute;
     bottom: 0;
