@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 @font-face {
   font-family: "galano_grotesqueregular";
   src: url("../fonts/GalanoGrotesque-Regular-webfont.woff") format("woff"), url("../fonts/GalanoGrotesque-Regular-webfont.otf") format("opentype"), url("../fonts/GalanoGrotesque-Regular-webfont.eot") format("embedded-opentype");
@@ -11,9 +12,11 @@
   font-family: "futura_meduim";
   src: url("../fonts/futura medium bt.ttf");
 }
+
 $galano: 'galano_grotesqueregular';
 $galano-semibold: 'galano_grotesquesemibold';
 $futura: 'futura_meduim';
+$noto-sans: 'Noto Sans TC', sans-serif;
 $theme-green: #2ca88c;
 $theme-blue: #39358c;
 $theme-brown: #90684b;
@@ -36,7 +39,14 @@ $theme-brown: #90684b;
 @mixin page-title{
 	font-family: $galano-semibold;
 	color: $theme-brown;
-	font-size: 48px;
+	text-align: center;
+	font-size: 28px;
+	@media screen and (min-width: 992px){
+		font-size: 38px;
+		@media screen and (min-width: 1400px){
+			font-size: 48px;
+		}
+	}
 }
 *{
 	box-sizing: border-box;
@@ -314,6 +324,9 @@ html{
 						line-height: 46px;
 						margin: auto;
 						transition: all 0.2s ease;
+						&:visited{
+							color: $theme-blue;
+						}
 						&:hover{
 							background-color: $theme-blue;
 							color: white;
@@ -374,6 +387,9 @@ html{
 						line-height: 46px;
 						margin: auto;
 						transition: all 0.2s ease;
+						&:visited{
+							color: $theme-blue;
+						}
 						&:hover{
 							background-color: $theme-blue;
 							color: white;
@@ -436,6 +452,9 @@ html{
 						line-height: 46px;
 						margin: auto;
 						transition: all 0.2s ease;
+						&:visited{
+							color: $theme-blue;
+						}
 						&:hover{
 							background-color: $theme-blue;
 							color: white;
@@ -514,9 +533,7 @@ html{
 				}
 			}
 		}//sponsor
-	}//body
-}
-html{
+	}//body#homepage
 	body#page-about{
 		min-height: 100vh;
 		position: relative;
@@ -529,10 +546,8 @@ html{
 				margin: auto;
 				h1{
 					@include page-title;
-					text-align: center;
-					font-size: 28px;
-					@media screen and (min-width: 992px){
-						font-size: 38px;
+					@media screen and (min-width: 1400px) {
+						font-size: 52px;
 					}
 				}
 				@media screen and (min-width: 768px) {
@@ -613,6 +628,188 @@ html{
 			width: 100%;
 			@media screen and (min-width: 768px) {
 				position: relative;
+			}
+		}
+	}//body#
+	body#page-program{
+		section.title{
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5%;
+			h1{
+				@include page-title;
+			}
+			@media screen and (min-width: 992px){
+				height: 200px;
+			}
+		}
+		section.cat{
+			margin-top: 20px;
+			&:nth-child(3){
+				margin-top: -10px;
+				@media screen and (min-width: 992px) {
+					margin-top: -60px;
+				}
+			}
+			&-jiang-hu .ticket, &-queer .ticket{
+				justify-content: flex-end;
+			}
+			&-bear .ticket{
+				justify-content: center;
+			}
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1168px;
+				.seperator{
+					@include seperator;
+					margin-top: 0;
+				}
+				.cat-name{
+					font-family: $futura;
+					text-align: center;
+					font-size: 20px;
+					font-weight: 400;
+					@media screen and (min-width: 992px){
+						font-size: 28px;
+					}
+				}
+				.ticket{
+					border: 1px solid $theme-green;
+					width: 100%;
+					margin-top: 20px;
+					.film-img{
+						width: 100%;
+						height: 55vw;
+						background-size: cover;
+						background-position: center;
+						&-ice{
+							background-image: url(../image/movie/ice.png);
+						}
+						&-jade{
+							background-image: url(../image/movie/jade.png);
+						}
+						&-gang{
+							background-image: url(../image/movie/gang.png);
+						}
+						&-vengeance{
+							background-image: url(../image/movie/Vengeance.png);
+						}
+						&-b-movie{
+							background-image: url(../image/movie/b-movie.png);
+						}
+						&-never{
+							background-color: #d0ccc8;
+							color: gray;
+							font-size: 25px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							i{
+								margin-right: 10px;
+							}
+						}
+						&-talk{
+							background-image: url(../image/movie/talk.png);
+						}
+						&-taipeilove{
+							background-image: url(../image/movie/taipeilove.png);
+						}
+						&-bb{
+							background-image: url(../image/movie/bb.png);
+						}
+						@media screen and (min-width: 768px){
+							width: 50%;
+							height: 320px;
+							@media screen and (min-width: 768px){
+								max-width: 473px;
+							}
+						}
+					}//film-img
+					.film-info{
+						padding: 10px;
+						background-color: white;
+						.film-name{
+							font-size: 18px;
+							&-en{
+								font-family: Helvetica;
+								font-weight: 900;
+							}
+							&-ch{
+								font-family: $noto-sans;
+								margin-top: 5px;
+								@media screen and (min-width: 768px){
+									margin-top: 10px;
+								}
+							}
+						}
+						.trailor-btn{
+							border: 1px solid black;
+							padding: 5px 15px;
+							display: block;
+							width: fit-content;
+							margin-top: 20px;
+							color: black;
+							transition: all 0.2s ease;
+							&:hover, &:active{
+								background-color: black;
+								color: white;
+							}
+							&:focus{
+								background-color: white;
+								color: black;
+							}
+							@media screen and (min-width: 992px){
+								margin-top: 40px;
+							}
+						}
+						@media screen and (min-width: 768px){
+							width: 50%;
+							padding: 30px;
+							@media screen and (min-width: 992px){
+								max-width: 485px;
+								height: 320px;
+								border-right: 1px solid $theme-green;
+								display: flex;
+							    flex-flow: column;
+							    justify-content: center;
+							}
+						}
+					}//film-info
+					@media screen and (min-width: 768px) {
+						display: flex;
+						align-items: center;
+						@media screen and (min-width: 992px){
+							background-image: url(../image/deco_program.png);
+							background-size: contain;
+							background-repeat: repeat-x;
+							margin-top: 60px;
+						}
+					}
+				}//ticket
+			}//frame
+			@media screen and (min-width: 992px){
+				margin-top: 70px;
+				&-jiang-hu, &-queer{
+					.frame{
+						.ticket{
+							.film-info{
+								border: 0;
+							}
+						}
+					}
+				}
+			}	
+		}//cat
+		footer{
+			margin-top: 100px;
+			@media screen and (min-width: 768px) {
+				margin-top: 150px;
+				@media screen and (min-width: 992px) {
+					margin-top: 250px;
+				}
 			}
 		}
 	}
