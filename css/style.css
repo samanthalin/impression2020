@@ -712,4 +712,121 @@ html body#page-program footer {
     html body#page-program footer {
       margin-top: 250px; } }
 
+html #page-ticket .title {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px; }
+  html #page-ticket .title h1 {
+    font-family: "galano_grotesquesemibold";
+    color: #90684b;
+    text-align: center;
+    font-size: 28px; }
+    @media screen and (min-width: 992px) {
+      html #page-ticket .title h1 {
+        font-size: 38px; } }
+  @media screen and (min-width: 992px) and (min-width: 1400px) {
+    html #page-ticket .title h1 {
+      font-size: 48px; } }
+
+  @media screen and (min-width: 992px) {
+    html #page-ticket .title {
+      height: 200px; } }
+html #page-ticket .pass .frame {
+  width: 90%;
+  margin: auto;
+  max-width: 990px; }
+  html #page-ticket .pass .frame .sub-title {
+    font-family: "galano_grotesquesemibold";
+    font-size: 20px; }
+    @media screen and (min-width: 768px) {
+      html #page-ticket .pass .frame .sub-title {
+        font-size: 24px; } }
+  html #page-ticket .pass .frame ul {
+    padding-left: 25px;
+    margin-top: 20px; }
+    html #page-ticket .pass .frame ul li {
+      list-style: disc;
+      padding: 5px 0; }
+  html #page-ticket .pass .frame .paragraph {
+    margin-top: 20px; }
+  html #page-ticket .pass .frame .note-img {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 10px; }
+html #page-ticket .faq {
+  margin-top: 50px; }
+  html #page-ticket .faq .frame {
+    width: 90%;
+    margin: auto;
+    max-width: 990px; }
+    html #page-ticket .faq .frame .sub-title {
+      font-family: "galano_grotesquesemibold";
+      font-size: 20px; }
+      @media screen and (min-width: 768px) {
+        html #page-ticket .faq .frame .sub-title {
+          font-size: 24px; } }
+    html #page-ticket .faq .frame .question-wrap {
+      margin-top: 20px; }
+      html #page-ticket .faq .frame .question-wrap .question {
+        border-bottom: 1px solid #2ca88c;
+        padding: 20px 0 20px 30px;
+        position: relative;
+        transition: all 0.2s ease;
+        cursor: pointer; }
+        html #page-ticket .faq .frame .question-wrap .question .ask {
+          font-family: "galano_grotesquesemibold";
+          transition: all 0.2s ease;
+          font-size: 18px; }
+          html #page-ticket .faq .frame .question-wrap .question .ask:before {
+            position: absolute;
+            content: '\f067';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0; }
+        html #page-ticket .faq .frame .question-wrap .question .answer {
+          height: 0;
+          overflow: hidden;
+          transition: all 0.2s ease; }
+        html #page-ticket .faq .frame .question-wrap .question:hover .ask {
+          color: #2ca88c; }
+        html #page-ticket .faq .frame .question-wrap .question--open .ask {
+          color: #2ca88c; }
+          html #page-ticket .faq .frame .question-wrap .question--open .ask:before {
+            content: '\f068'; }
+        html #page-ticket .faq .frame .question-wrap .question--open .answer {
+          height: 80px;
+          margin-top: 10px; }
+          @media screen and (min-width: 575px) {
+            html #page-ticket .faq .frame .question-wrap .question--open .answer {
+              height: 65px;
+              margin-top: 20px; } }
+  @media screen and (min-width: 575px) and (min-width: 808px) {
+    html #page-ticket .faq .frame .question-wrap .question--open .answer {
+      height: 50px; } }
+
+html #page-ticket section.contact {
+  margin-top: 50px; }
+  html #page-ticket section.contact .frame {
+    width: 90%;
+    margin: auto;
+    max-width: 990px; }
+    html #page-ticket section.contact .frame .sub-title {
+      font-family: "galano_grotesquesemibold";
+      font-size: 20px; }
+      @media screen and (min-width: 768px) {
+        html #page-ticket section.contact .frame .sub-title {
+          font-size: 24px; } }
+    html #page-ticket section.contact .frame p {
+      margin-top: 15px; }
+      html #page-ticket section.contact .frame p a {
+        color: #39358c;
+        text-decoration: underline; }
+        html #page-ticket section.contact .frame p a:hover {
+          color: #2ca88c; }
+html #page-ticket footer {
+  margin-top: 150px; }
+
 /*# sourceMappingURL=style.css.map */

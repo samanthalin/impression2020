@@ -17,6 +17,7 @@ $galano: 'galano_grotesqueregular';
 $galano-semibold: 'galano_grotesquesemibold';
 $futura: 'futura_meduim';
 $noto-sans: 'Noto Sans TC', sans-serif;
+$fontAwesome: 'Font Awesome 5 Free';
 $theme-green: #2ca88c;
 $theme-blue: #39358c;
 $theme-brown: #90684b;
@@ -812,5 +813,148 @@ html{
 				}
 			}
 		}
-	}
+	}//#page-program
+	#page-ticket{
+		.title{
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0 10px;
+			h1{
+				@include page-title;
+			}
+			@media screen and (min-width: 992px) {
+				height: 200px;
+				@media scree and (min-width: 1400px) {
+					height: 250px;
+				}
+			}
+		}//title
+		.pass{
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 990px;
+				.sub-title{
+					font-family: $galano-semibold;
+					font-size: 20px;
+					@media screen and (min-width: 768px) {
+						font-size: 24px;
+					}
+				}
+				ul{
+					padding-left: 25px;
+					margin-top: 20px;
+					li{
+						list-style: disc;
+						padding: 5px 0;
+					}
+				}
+				.paragraph{
+					margin-top: 20px;
+				}
+				.note-img{
+					width: 100%;
+					max-width: 320px;
+					margin-top: 10px;
+				}
+			}
+		}//pass
+		.faq{
+			margin-top: 50px;
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 990px;
+				.sub-title{
+					font-family: $galano-semibold;
+					font-size: 20px;
+					@media screen and (min-width: 768px) {
+						font-size: 24px;
+					}
+				}
+				.question-wrap{
+					margin-top: 20px;
+					.question{
+						border-bottom: 1px solid $theme-green;
+						padding: 20px 0 20px 30px;
+						position: relative;
+						transition: all 0.2s ease;
+						cursor: pointer;
+						.ask{
+							font-family: $galano-semibold;
+							transition: all 0.2s ease;
+							font-size: 18px;
+							&:before{
+								position: absolute;
+								content: '\f067';
+								font-family: $fontAwesome;
+								font-weight: 900;
+								position: absolute;
+								left: 0;
+							}
+						}
+						.answer{
+							height: 0;
+							overflow: hidden;
+							transition: all 0.2s ease;
+						}
+						&:hover{
+							.ask{
+								color: $theme-green;
+							}
+						}
+						&--open{
+							.ask{
+								color: $theme-green;
+								&:before{
+									content: '\f068';
+								}
+							}
+							.answer{
+								height: 80px;
+								margin-top: 10px;
+								@media screen and (min-width: 575px) {
+									height: 65px;
+									margin-top: 20px;
+									@media screen and (min-width: 808px){
+										height: 50px;
+									}
+								}
+							}
+						}
+					}
+				}//question-wrap
+			}
+		}//section.faq
+		section.contact{
+			margin-top: 50px;
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 990px;
+				.sub-title{
+					font-family: $galano-semibold;
+					font-size: 20px;
+					@media screen and (min-width: 768px) {
+						font-size: 24px;
+					}
+				}
+				p{
+					margin-top: 15px;
+					a{
+						color: $theme-blue;
+						text-decoration: underline;
+						&:hover{
+							color: $theme-green;
+						}
+					}
+				}
+			}
+		}//contact
+		footer{
+			margin-top: 150px;
+		}
+	}//#page-ticket
 }
