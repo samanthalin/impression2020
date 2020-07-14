@@ -828,5 +828,88 @@ html #page-ticket section.contact {
           color: #2ca88c; }
 html #page-ticket footer {
   margin-top: 150px; }
+html #page-event .title .frame {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+  max-width: 1060px; }
+  html #page-event .title .frame h1 {
+    font-family: "galano_grotesquesemibold";
+    color: #90684b;
+    text-align: center;
+    font-size: 28px; }
+    @media screen and (min-width: 992px) {
+      html #page-event .title .frame h1 {
+        font-size: 38px; } }
+  @media screen and (min-width: 992px) and (min-width: 1400px) {
+    html #page-event .title .frame h1 {
+      font-size: 48px; } }
+
+  html #page-event .title .frame p {
+    margin-top: 15px;
+    text-align: center; }
+html #page-event .event-wrap .frame {
+  width: 90%;
+  margin: auto;
+  max-width: 1060px; }
+  html #page-event .event-wrap .frame .event {
+    border-top: 1px solid #2ca88c;
+    padding: 40px 0; }
+    html #page-event .event-wrap .frame .event .date {
+      color: #5b5b5b;
+      font-size: 14px; }
+    html #page-event .event-wrap .frame .event .event-name {
+      font-size: 22px;
+      font-family: "galano_grotesquesemibold";
+      margin: 10px 0; }
+    html #page-event .event-wrap .frame .event .speaker {
+      font-size: 18px;
+      font-family: "galano_grotesquesemibold"; }
+    html #page-event .event-wrap .frame .event .musician {
+      margin-top: 30px;
+      max-width: 850px; }
+      html #page-event .event-wrap .frame .event .musician img {
+        width: 150px; }
+      html #page-event .event-wrap .frame .event .musician .musician-info .name {
+        font-family: "galano_grotesquesemibold";
+        font-size: 18px; }
+      html #page-event .event-wrap .frame .event .musician .musician-info .exp {
+        margin-top: 10px; }
+      @media screen and (min-width: 768px) {
+        html #page-event .event-wrap .frame .event .musician .musician-info {
+          margin-left: 20px; } }
+      @media screen and (min-width: 768px) {
+        html #page-event .event-wrap .frame .event .musician {
+          display: flex;
+          align-items: center; } }
+    html #page-event .event-wrap .frame .event .button {
+      background-color: #39358c;
+      color: white;
+      display: block;
+      width: 220px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      margin-top: 25px; }
+      html #page-event .event-wrap .frame .event .button i {
+        margin-right: 5px; }
+      html #page-event .event-wrap .frame .event .button:hover {
+        background-color: #1877f2; }
+    html #page-event .event-wrap .frame .event .button-disable {
+      color: white;
+      width: 220px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      margin-top: 25px;
+      cursor: not-allowed;
+      background-color: #b8b8b8; }
+      html #page-event .event-wrap .frame .event .button-disable i {
+        margin-right: 5px; }
+    html #page-event .event-wrap .frame .event .content {
+      margin-top: 20px;
+      line-height: 1.4em; }
+html #page-event footer {
+  margin-top: 150px; }
 
 /*# sourceMappingURL=style.css.map */
