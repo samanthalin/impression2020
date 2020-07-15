@@ -883,6 +883,121 @@ html{
 				}
 			}	
 		}//cat
+		.popup{
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			background-color: rgba(0,0,0,0.5);
+			top: 0;
+			left: 0;
+			z-index: 1235;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			.window{
+				width: calc(100% - 10vw);
+				max-height: calc(100% - 10vw);
+				max-width: 920px;
+				background-color: white;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				.header{
+					font-size: 22px;
+					padding-right: 10px;
+					text-align: right;
+					flex: none;
+					button{
+						-webkit-appearance: none;
+						-moz-appearance: none;
+						-ms-appearance: none;
+						-o-appearance: none;
+						appearance: none;
+						outline: none;
+						background: none;
+						border: none;
+						padding: 0;
+						cursor: pointer;
+						i{
+							font-size: 20px;
+						}
+						&:hover{
+							color: gray;
+						}
+					}
+				}
+				.content{
+					height: 100%;
+					padding: 20px;
+					padding-top: 0;
+					flex: 1;
+					overflow-y: scroll;
+					.content-wrap{
+						.text{
+							.film-name{
+								font-size: 24px;
+								&-en{
+									font-family: Helvetica;
+									font-weight: 900;
+								}
+								&-ch{
+									font-family: $noto-sans;
+									margin-top: 5px;
+									@media screen and (min-width: 768px){
+										margin-top: 10px;
+									}
+								}
+							}
+							.film-brief{
+								margin-top: 15px;
+								font-size: 16px;
+								font-family: Helvetica;
+								font-weight: 400;
+								color: gray;
+							}
+							.film-tag{
+								margin-top: 15px;
+								font-size: 16px;
+								font-family: Helvetica;
+								font-weight: 400;
+								color: $theme-green;
+							}
+							.button{
+								border: 1px solid black;
+								padding: 5px 15px;
+								display: inline-block;
+								color: black;
+								transition: all 0.2s ease;
+								margin-top: 20px;
+								&:hover, &:active{
+									background-color: black;
+									color: white;
+								}
+								&:focus{
+									background-color: white;
+									color: black;
+								}
+							}
+							.intro{
+								margin-top: 10px;
+								padding: 10px;
+								line-height: 1.4em;
+								p{
+									margin-top: 10px;
+								}
+								span{
+									font-style: italic;
+								}
+							}
+							@media screen and (min-width: 992px){
+								padding-right: 20px;
+							}
+						}//text
+					}
+				}//content
+			}//window
+		}//popup
 		footer{
 			margin-top: 100px;
 			@media screen and (min-width: 768px) {

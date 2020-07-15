@@ -763,6 +763,99 @@ html body#page-program section.cat {
       margin-top: 70px; }
       html body#page-program section.cat-jiang-hu .frame .ticket .film-info, html body#page-program section.cat-queer .frame .ticket .film-info {
         border: 0; } }
+html body#page-program .popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1235;
+  display: none;
+  justify-content: center;
+  align-items: center; }
+  html body#page-program .popup .window {
+    width: calc(100% - 10vw);
+    max-height: calc(100% - 10vw);
+    max-width: 920px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    html body#page-program .popup .window .header {
+      font-size: 22px;
+      padding-right: 10px;
+      text-align: right;
+      flex: none; }
+      html body#page-program .popup .window .header button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        outline: none;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer; }
+        html body#page-program .popup .window .header button i {
+          font-size: 20px; }
+        html body#page-program .popup .window .header button:hover {
+          color: gray; }
+    html body#page-program .popup .window .content {
+      height: 100%;
+      padding: 20px;
+      padding-top: 0;
+      flex: 1;
+      overflow-y: scroll; }
+      html body#page-program .popup .window .content .content-wrap .text .film-name {
+        font-size: 24px; }
+        html body#page-program .popup .window .content .content-wrap .text .film-name-en {
+          font-family: Helvetica;
+          font-weight: 900; }
+        html body#page-program .popup .window .content .content-wrap .text .film-name-ch {
+          font-family: "Noto Sans TC", sans-serif;
+          margin-top: 5px; }
+          @media screen and (min-width: 768px) {
+            html body#page-program .popup .window .content .content-wrap .text .film-name-ch {
+              margin-top: 10px; } }
+      html body#page-program .popup .window .content .content-wrap .text .film-brief {
+        margin-top: 15px;
+        font-size: 16px;
+        font-family: Helvetica;
+        font-weight: 400;
+        color: gray; }
+      html body#page-program .popup .window .content .content-wrap .text .film-tag {
+        margin-top: 15px;
+        font-size: 16px;
+        font-family: Helvetica;
+        font-weight: 400;
+        color: #2ca88c; }
+      html body#page-program .popup .window .content .content-wrap .text .button {
+        border: 1px solid black;
+        padding: 5px 15px;
+        display: inline-block;
+        color: black;
+        transition: all 0.2s ease;
+        margin-top: 20px; }
+        html body#page-program .popup .window .content .content-wrap .text .button:hover, html body#page-program .popup .window .content .content-wrap .text .button:active {
+          background-color: black;
+          color: white; }
+        html body#page-program .popup .window .content .content-wrap .text .button:focus {
+          background-color: white;
+          color: black; }
+      html body#page-program .popup .window .content .content-wrap .text .intro {
+        margin-top: 10px;
+        padding: 10px;
+        line-height: 1.4em; }
+        html body#page-program .popup .window .content .content-wrap .text .intro p {
+          margin-top: 10px; }
+        html body#page-program .popup .window .content .content-wrap .text .intro span {
+          font-style: italic; }
+      @media screen and (min-width: 992px) {
+        html body#page-program .popup .window .content .content-wrap .text {
+          padding-right: 20px; } }
 html body#page-program footer {
   margin-top: 100px; }
   @media screen and (min-width: 768px) {
