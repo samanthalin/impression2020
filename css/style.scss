@@ -21,6 +21,7 @@ $fontAwesome: 'Font Awesome 5 Free';
 $theme-green: #2ca88c;
 $theme-blue: #39358c;
 $theme-brown: #90684b;
+$theme-light-blue: #48f4cc;
 
 @mixin seperator{
 	display: block;
@@ -413,6 +414,7 @@ html{
 					max-width: 705px;
 					background-color: white;
 					margin: auto;
+					position: relative;
 					.title{
 						@include homepage-title;
 						text-align: center;
@@ -446,8 +448,28 @@ html{
 							font-size: 22px;
 						}
 					}
+					.fb-link{
+						font-family: $galano-semibold;
+						color: $theme-blue;
+						text-align: center;
+						display: block;
+						width: 190px;
+						margin: auto;
+						margin-top: 20px;
+						i{
+							margin-right: 10px;
+							border: 2px solid $theme-blue;
+							padding: 3px 6px;
+						}
+						&:hover{
+							color: $theme-light-blue;
+							i{
+								border: 2px solid $theme-light-blue;
+							}
+						}
+					}
 					@media screen and (min-width: 992px){
-						height: 245px;
+						height: 323px;
 					}
 				}
 			}
@@ -478,6 +500,7 @@ html{
 					flex-flow: column;
 					justify-content: center;
 					padding: 47px;
+					position: relative;
 					.title{
 						@include homepage-title;
 						text-align: center;
@@ -511,7 +534,30 @@ html{
 							font-size: 22px;
 						}
 					}
-				}
+					.fb-link{
+						font-family: $galano-semibold;
+						color: $theme-blue;
+						text-align: center;
+						display: block;
+						z-index: 20;
+						position: absolute;
+						left: 50%;
+						transform: translateX(-50%);
+						bottom: -44px;
+						color: $theme-light-blue;
+						i{
+							margin-right: 10px;
+							border: 2px solid $theme-light-blue;
+							padding: 3px 6px;
+						}
+						&:hover{
+							color: white;
+							i{
+								border: 2px solid white;
+							}
+						}
+					}
+				}//content-wrap
 				.deco-right{
 					width: calc(95vw - 941px);
 					border: 1px solid $theme-green;
@@ -1485,6 +1531,20 @@ html{
 						&:hover{
 							color: $theme-green;
 						}
+					}
+				}
+				.german{
+					margin-top: 80px;
+					position: relative;
+					&:before{
+						content: '';
+						position: absolute;
+						width: 150px;
+						height: 1px;
+						background-color: $theme-green;
+						left: 50%;
+						transform: translate(-50%);
+						top: -40px;
 					}
 				}
 			}

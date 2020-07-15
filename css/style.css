@@ -332,7 +332,8 @@ html body#page-home .mobile-event .frame {
     width: 100%;
     max-width: 705px;
     background-color: white;
-    margin: auto; }
+    margin: auto;
+    position: relative; }
     html body#page-home .mobile-event .frame .content-wrap .title {
       font-family: "galano_grotesquesemibold";
       color: #90684b;
@@ -363,9 +364,25 @@ html body#page-home .mobile-event .frame {
         color: white; }
       html body#page-home .mobile-event .frame .content-wrap .button i {
         font-size: 22px; }
+    html body#page-home .mobile-event .frame .content-wrap .fb-link {
+      font-family: "galano_grotesquesemibold";
+      color: #39358c;
+      text-align: center;
+      display: block;
+      width: 190px;
+      margin: auto;
+      margin-top: 20px; }
+      html body#page-home .mobile-event .frame .content-wrap .fb-link i {
+        margin-right: 10px;
+        border: 2px solid #39358c;
+        padding: 3px 6px; }
+      html body#page-home .mobile-event .frame .content-wrap .fb-link:hover {
+        color: #48f4cc; }
+        html body#page-home .mobile-event .frame .content-wrap .fb-link:hover i {
+          border: 2px solid #48f4cc; }
     @media screen and (min-width: 992px) {
       html body#page-home .mobile-event .frame .content-wrap {
-        height: 245px; } }
+        height: 323px; } }
 @media screen and (min-width: 1050px) {
   html body#page-home .mobile-event {
     display: none; } }
@@ -396,7 +413,8 @@ html body#page-home .event {
       display: flex;
       flex-flow: column;
       justify-content: center;
-      padding: 47px; }
+      padding: 47px;
+      position: relative; }
       html body#page-home .event .frame .content-wrap .title {
         font-family: "galano_grotesquesemibold";
         color: #90684b;
@@ -427,6 +445,25 @@ html body#page-home .event {
           color: white; }
         html body#page-home .event .frame .content-wrap .button i {
           font-size: 22px; }
+      html body#page-home .event .frame .content-wrap .fb-link {
+        font-family: "galano_grotesquesemibold";
+        color: #39358c;
+        text-align: center;
+        display: block;
+        z-index: 20;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -44px;
+        color: #48f4cc; }
+        html body#page-home .event .frame .content-wrap .fb-link i {
+          margin-right: 10px;
+          border: 2px solid #48f4cc;
+          padding: 3px 6px; }
+        html body#page-home .event .frame .content-wrap .fb-link:hover {
+          color: white; }
+          html body#page-home .event .frame .content-wrap .fb-link:hover i {
+            border: 2px solid white; }
     html body#page-home .event .frame .deco-right {
       width: calc(95vw - 941px);
       border: 1px solid #2ca88c;
@@ -1293,6 +1330,18 @@ html #page-sponsor section.content {
         text-decoration: underline; }
         html #page-sponsor section.content .frame p a:hover {
           color: #2ca88c; }
+    html #page-sponsor section.content .frame .german {
+      margin-top: 80px;
+      position: relative; }
+      html #page-sponsor section.content .frame .german:before {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 1px;
+        background-color: #2ca88c;
+        left: 50%;
+        transform: translate(-50%);
+        top: -40px; }
 html #page-sponsor footer {
   margin-top: 100px; }
 html #page-press section.title {
