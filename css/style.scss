@@ -58,6 +58,7 @@ html{
 		text-rendering: optimizeLegibility;
     	-webkit-font-smoothing: antialiased;
     	font-family: galano_grotesqueregular;
+    	overflow-x: hidden;
 		header{
 			padding-top: 50px;
 			nav{
@@ -94,6 +95,42 @@ html{
 				@media screen and (min-width: 992px) {
 					display: none;
 				}
+			}
+			.mobile-menu{
+				position: fixed;
+				z-index: 1240;
+				width: 300px;
+				height: 100vh;
+				background-color: white;
+				font-size: 18px;
+				padding: 48px 32px;
+				transform: translateX(100%);
+				top: 0;
+				right: 0;
+				transition: all 0.3s ease;
+				.close-btn{
+					font-size: 20px;
+					position: absolute;
+					top: 10px;
+					left: 10px;
+					&:visited{
+						color: $theme-blue;
+					}
+				}
+				ul{
+					li{
+						padding: 15px 0;
+						border-bottom: 1px solid #eeeae6;
+						a, a:visited{
+							color: black;
+						}
+					}
+				}
+			}
+			.menu-show{
+				transition: all 0.3s ease;
+				transform: translateX(0);
+				box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 			}
 			.desktop-nav{
 				display: none;
@@ -148,6 +185,9 @@ html{
 			font-size: 14px;
 			padding: 10px 0;
 		}//footer
+	}//body
+	.overflow{
+		overflow: hidden;
 	}
 }
 
@@ -1263,4 +1303,94 @@ html{
 			}
 		}
 	}//#team
+	#page-sponsor{
+		section.title{
+			padding: 40px 0 0 0;
+			h1{
+				@include page-title;
+			}
+			.seperator{
+				@include seperator;
+			}
+		}
+		section.content{
+			min-height: calc(100vh - 195px);
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1100px;
+				p{
+					margin-top: 30px;
+					line-height: 1.4em;
+					a{
+						color: $theme-blue;
+						text-decoration: underline;
+						&:hover{
+							color: $theme-green;
+						}
+					}
+				}
+			}
+		}
+		footer{
+			margin-top: 100px;
+		}
+	}//#page-sponsor
+	#page-press{
+		section.title{
+			padding: 40px 0 0 0;
+			h1{
+				@include page-title;
+			}
+			.seperator{
+				@include seperator;
+			}
+		}
+		section.content{
+			min-height: calc(100vh - 229px);
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1100px;
+				.press-kit{
+					font-size: 18px;
+					text-align: center;
+					.link-wrap{
+						display: block;
+						margin-top: 10px;
+						a, a:visited{
+							font-family: $galano-semibold;
+							color: black;
+							padding: 0 10px;
+						}
+						a:hover{
+							color: $theme-green;
+						}
+						@media screen and (min-width: 768px){
+							display: inline-block;
+							margin-left: 30px;
+						}
+					}
+				}
+				.contact{
+					margin-top: 30px;
+					font-size: 18px;
+					text-align: center;
+					a{
+						color: $theme-green;
+						text-decoration: underline;
+						&:hover{
+							color: $theme-blue;
+						}
+					}
+				}
+			}
+			@media screen and (min-width: 992px) {
+				min-height: calc(100vh - 315px);
+			}
+		}
+		footer{
+			
+		}
+	}//#page-press
 }

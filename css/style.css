@@ -14,7 +14,8 @@
 html body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: galano_grotesqueregular; }
+  font-family: galano_grotesqueregular;
+  overflow-x: hidden; }
   html body header {
     padding-top: 50px; }
     html body header nav {
@@ -46,6 +47,34 @@ html body {
       @media screen and (min-width: 992px) {
         html body header .mobile-nav {
           display: none; } }
+    html body header .mobile-menu {
+      position: fixed;
+      z-index: 1240;
+      width: 300px;
+      height: 100vh;
+      background-color: white;
+      font-size: 18px;
+      padding: 48px 32px;
+      transform: translateX(100%);
+      top: 0;
+      right: 0;
+      transition: all 0.3s ease; }
+      html body header .mobile-menu .close-btn {
+        font-size: 20px;
+        position: absolute;
+        top: 10px;
+        left: 10px; }
+        html body header .mobile-menu .close-btn:visited {
+          color: #39358c; }
+      html body header .mobile-menu ul li {
+        padding: 15px 0;
+        border-bottom: 1px solid #eeeae6; }
+        html body header .mobile-menu ul li a, html body header .mobile-menu ul li a:visited {
+          color: black; }
+    html body header .menu-show {
+      transition: all 0.3s ease;
+      transform: translateX(0);
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
     html body header .desktop-nav {
       display: none;
       height: 70px;
@@ -88,6 +117,8 @@ html body {
     font-family: Helvetica;
     font-size: 14px;
     padding: 10px 0; }
+html .overflow {
+  overflow: hidden; }
 
 html body#page-home .banner {
   position: relative; }
@@ -1102,5 +1133,99 @@ html #page-team footer {
   @media screen and (min-width: 768px) {
     html #page-team footer {
       margin-top: 200px; } }
+html #page-sponsor section.title {
+  padding: 40px 0 0 0; }
+  html #page-sponsor section.title h1 {
+    font-family: "galano_grotesquesemibold";
+    color: #90684b;
+    text-align: center;
+    font-size: 28px; }
+    @media screen and (min-width: 992px) {
+      html #page-sponsor section.title h1 {
+        font-size: 38px; } }
+  @media screen and (min-width: 992px) and (min-width: 1400px) {
+    html #page-sponsor section.title h1 {
+      font-size: 48px; } }
+
+  html #page-sponsor section.title .seperator {
+    display: block;
+    width: 40px;
+    margin: 20px auto; }
+    @media screen and (min-width: 992px) {
+      html #page-sponsor section.title .seperator {
+        width: 67px;
+        margin: 36px auto; } }
+html #page-sponsor section.content {
+  min-height: calc(100vh - 195px); }
+  html #page-sponsor section.content .frame {
+    width: 90%;
+    margin: auto;
+    max-width: 1100px; }
+    html #page-sponsor section.content .frame p {
+      margin-top: 30px;
+      line-height: 1.4em; }
+      html #page-sponsor section.content .frame p a {
+        color: #39358c;
+        text-decoration: underline; }
+        html #page-sponsor section.content .frame p a:hover {
+          color: #2ca88c; }
+html #page-sponsor footer {
+  margin-top: 100px; }
+html #page-press section.title {
+  padding: 40px 0 0 0; }
+  html #page-press section.title h1 {
+    font-family: "galano_grotesquesemibold";
+    color: #90684b;
+    text-align: center;
+    font-size: 28px; }
+    @media screen and (min-width: 992px) {
+      html #page-press section.title h1 {
+        font-size: 38px; } }
+  @media screen and (min-width: 992px) and (min-width: 1400px) {
+    html #page-press section.title h1 {
+      font-size: 48px; } }
+
+  html #page-press section.title .seperator {
+    display: block;
+    width: 40px;
+    margin: 20px auto; }
+    @media screen and (min-width: 992px) {
+      html #page-press section.title .seperator {
+        width: 67px;
+        margin: 36px auto; } }
+html #page-press section.content {
+  min-height: calc(100vh - 229px); }
+  html #page-press section.content .frame {
+    width: 90%;
+    margin: auto;
+    max-width: 1100px; }
+    html #page-press section.content .frame .press-kit {
+      font-size: 18px;
+      text-align: center; }
+      html #page-press section.content .frame .press-kit .link-wrap {
+        display: block;
+        margin-top: 10px; }
+        html #page-press section.content .frame .press-kit .link-wrap a, html #page-press section.content .frame .press-kit .link-wrap a:visited {
+          font-family: "galano_grotesquesemibold";
+          color: black;
+          padding: 0 10px; }
+        html #page-press section.content .frame .press-kit .link-wrap a:hover {
+          color: #2ca88c; }
+        @media screen and (min-width: 768px) {
+          html #page-press section.content .frame .press-kit .link-wrap {
+            display: inline-block;
+            margin-left: 30px; } }
+    html #page-press section.content .frame .contact {
+      margin-top: 30px;
+      font-size: 18px;
+      text-align: center; }
+      html #page-press section.content .frame .contact a {
+        color: #2ca88c;
+        text-decoration: underline; }
+        html #page-press section.content .frame .contact a:hover {
+          color: #39358c; }
+  @media screen and (min-width: 992px) {
+    html #page-press section.content {
+      min-height: calc(100vh - 315px); } }
 
 /*# sourceMappingURL=style.css.map */
