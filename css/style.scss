@@ -91,6 +91,12 @@ html{
 							height: 100%;
 						}
 					}
+					.hamburger{
+						color: black;
+						&:visited{
+							color: black;
+						}
+					}
 				}
 				@media screen and (min-width: 992px) {
 					display: none;
@@ -153,6 +159,7 @@ html{
 						ul{
 							display: flex;
 							justify-content: space-between;
+							align-items: center;
 							li{
 								padding: 5px;
 								text-align: center;
@@ -576,7 +583,6 @@ html{
 		}//sponsor
 	}//body#homepage
 	body#page-about{
-		min-height: 100vh;
 		position: relative;
 		.title{
 			padding: 40px 0;
@@ -643,8 +649,22 @@ html{
 				max-width: 780px;
 				p{
 					line-height: 1.5em;
+					position: relative;
 					span{
 						font-family: $galano-semibold;
+					}
+					&:last-child{
+						margin-top: 60px;
+						&:before{
+							content: '';
+							width: 150px;
+							height: 1px;
+							background-color: $theme-green;
+							position: absolute;
+							left: 50%;
+							top: -30px;
+							transform: translateX(-50%);
+						}
 					}
 				}
 				@media screen and (min-width: 768px) {
@@ -664,12 +684,7 @@ html{
 			}	
 		}
 		footer{
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			@media screen and (min-width: 768px) {
-				position: relative;
-			}
+			margin-top: 50px;
 		}
 	}//body#
 	body#page-program{
@@ -715,6 +730,15 @@ html{
 					font-weight: 400;
 					@media screen and (min-width: 992px){
 						font-size: 28px;
+					}
+				}
+				.cat-intro{
+					max-width: 900px;
+					//text-align: center;
+					margin: auto;
+					margin-top: 20px;
+					span{
+						font-style: italic;
 					}
 				}
 				.ticket{
@@ -786,21 +810,36 @@ html{
 								}
 							}
 						}
-						.trailor-btn{
-							border: 1px solid black;
-							padding: 5px 15px;
-							display: block;
-							width: fit-content;
+						.film-brief{
+							margin-top: 15px;
+							font-size: 16px;
+							font-family: Helvetica;
+							font-weight: 400;
+							color: gray;
+						}
+						.film-tag{
+							margin-top: 15px;
+							font-size: 16px;
+							font-family: Helvetica;
+							font-weight: 400;
+							color: $theme-green;
+						}
+						.button-wrap{
 							margin-top: 20px;
-							color: black;
-							transition: all 0.2s ease;
-							&:hover, &:active{
-								background-color: black;
-								color: white;
-							}
-							&:focus{
-								background-color: white;
+							.button{
+								border: 1px solid black;
+								padding: 5px 15px;
+								display: inline-block;
 								color: black;
+								transition: all 0.2s ease;
+								&:hover, &:active{
+									background-color: black;
+									color: white;
+								}
+								&:focus{
+									background-color: white;
+									color: black;
+								}
 							}
 							@media screen and (min-width: 992px){
 								margin-top: 40px;
@@ -878,10 +917,13 @@ html{
 				max-width: 990px;
 				.sub-title{
 					font-family: $galano-semibold;
-					font-size: 20px;
+					font-size: 18px;
 					@media screen and (min-width: 768px) {
-						font-size: 24px;
+						font-size: 20px;
 					}
+				}
+				.note{
+					margin-top: 10px;
 				}
 				ul{
 					padding-left: 25px;
