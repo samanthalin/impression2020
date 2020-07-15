@@ -294,7 +294,8 @@ html body#page-home .ticket .frame {
       text-align: center;
       line-height: 46px;
       margin: auto;
-      transition: all 0.2s ease; }
+      transition: all 0.2s ease;
+      color: #39358c; }
       html body#page-home .ticket .frame .content-wrap .button:visited {
         color: #39358c; }
       html body#page-home .ticket .frame .content-wrap .button:hover {
@@ -356,7 +357,8 @@ html body#page-home .mobile-event .frame {
       text-align: center;
       line-height: 46px;
       margin: auto;
-      transition: all 0.2s ease; }
+      transition: all 0.2s ease;
+      color: #39358c; }
       html body#page-home .mobile-event .frame .content-wrap .button:visited {
         color: #39358c; }
       html body#page-home .mobile-event .frame .content-wrap .button:hover {
@@ -437,7 +439,8 @@ html body#page-home .event {
         text-align: center;
         line-height: 46px;
         margin: auto;
-        transition: all 0.2s ease; }
+        transition: all 0.2s ease;
+        color: #39358c; }
         html body#page-home .event .frame .content-wrap .button:visited {
           color: #39358c; }
         html body#page-home .event .frame .content-wrap .button:hover {
