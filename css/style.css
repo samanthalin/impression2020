@@ -911,5 +911,196 @@ html #page-event .event-wrap .frame {
       line-height: 1.4em; }
 html #page-event footer {
   margin-top: 150px; }
+html #page-team section.title {
+  padding: 40px 0 0 0; }
+  html #page-team section.title h1 {
+    font-family: "galano_grotesquesemibold";
+    color: #90684b;
+    text-align: center;
+    font-size: 28px; }
+    @media screen and (min-width: 992px) {
+      html #page-team section.title h1 {
+        font-size: 38px; } }
+  @media screen and (min-width: 992px) and (min-width: 1400px) {
+    html #page-team section.title h1 {
+      font-size: 48px; } }
+
+html #page-team section.team .frame {
+  width: 90%;
+  margin: auto;
+  max-width: 1090px; }
+  html #page-team section.team .frame .seperator {
+    display: block;
+    width: 40px;
+    margin: 20px auto; }
+    @media screen and (min-width: 992px) {
+      html #page-team section.team .frame .seperator {
+        width: 67px;
+        margin: 36px auto; } }
+  html #page-team section.team .frame .sub-title {
+    font-family: "futura_meduim";
+    font-weight: 100;
+    text-align: center; }
+  html #page-team section.team .frame .intro {
+    text-align: center;
+    line-height: 1.4em;
+    margin-top: 20px; }
+  html #page-team section.team .frame .member-wrap .member {
+    text-align: center;
+    margin-top: 30px; }
+    html #page-team section.team .frame .member-wrap .member .img {
+      width: 250px;
+      height: 250px;
+      margin: auto;
+      margin-bottom: 15px;
+      background-size: cover; }
+      html #page-team section.team .frame .member-wrap .member .img-jaye {
+        background-image: url(../image/team_jaye.png); }
+      html #page-team section.team .frame .member-wrap .member .img-joyce {
+        background-image: url(../image/team_joyce.png); }
+      html #page-team section.team .frame .member-wrap .member .img-shengta {
+        background-image: url(../image/team_shengta.png); }
+      html #page-team section.team .frame .member-wrap .member .img-charlie {
+        background-image: url(../image/team_charlie.png); }
+      @media screen and (min-width: 992px) {
+        html #page-team section.team .frame .member-wrap .member .img {
+          width: 100%;
+          height: 21vw; } }
+  @media screen and (min-width: 992px) and (min-width: 1200px) {
+    html #page-team section.team .frame .member-wrap .member .img {
+      height: 220px; } }
+
+    html #page-team section.team .frame .member-wrap .member .title {
+      font-family: "galano_grotesquesemibold";
+      color: #90684b;
+      font-size: 18px; }
+    html #page-team section.team .frame .member-wrap .member .name {
+      font-family: "galano_grotesquesemibold";
+      font-size: 22px;
+      margin: 5px 0 13px 0; }
+    html #page-team section.team .frame .member-wrap .member .mail {
+      color: #8b8b8b;
+      text-decoration: underline; }
+      html #page-team section.team .frame .member-wrap .member .mail:hover {
+        color: #39358c; }
+    @media screen and (min-width: 768px) {
+      html #page-team section.team .frame .member-wrap .member {
+        width: 45%;
+        margin-top: 40px; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html #page-team section.team .frame .member-wrap .member {
+      width: 23%; } }
+
+  @media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) {
+    html #page-team section.team .frame .member-wrap .member {
+      width: 220px; } }
+
+  @media screen and (min-width: 768px) {
+    html #page-team section.team .frame .member-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html #page-team section.team .frame .member-wrap {
+      justify-content: space-between; } }
+
+  html #page-team section.team .frame .sub-member-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px; }
+    html #page-team section.team .frame .sub-member-wrap .sub-member {
+      text-align: center;
+      margin-top: 40px;
+      width: 40%; }
+      html #page-team section.team .frame .sub-member-wrap .sub-member .title {
+        font-family: "galano_grotesquesemibold";
+        color: #90684b;
+        font-size: 18px;
+        margin-top: 20px; }
+      html #page-team section.team .frame .sub-member-wrap .sub-member .name {
+        font-family: "galano_grotesquesemibold";
+        font-size: 22px;
+        margin: 5px 0 13px 0; }
+      html #page-team section.team .frame .sub-member-wrap .sub-member .mail {
+        color: #8b8b8b;
+        text-decoration: underline; }
+        html #page-team section.team .frame .sub-member-wrap .sub-member .mail:hover {
+          color: #39358c; }
+      @media screen and (min-width: 768px) {
+        html #page-team section.team .frame .sub-member-wrap .sub-member {
+          width: 33%; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    html #page-team section.team .frame .sub-member-wrap .sub-member {
+      width: auto; } }
+
+    @media screen and (min-width: 768px) {
+      html #page-team section.team .frame .sub-member-wrap {
+        justify-content: center; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    html #page-team section.team .frame .sub-member-wrap {
+      justify-content: space-between; } }
+
+html #page-team section.partner {
+  width: 90%;
+  margin: auto;
+  max-width: 1090px;
+  margin-top: 60px; }
+  html #page-team section.partner .frame .seperator {
+    display: block;
+    width: 40px;
+    margin: 20px auto; }
+    @media screen and (min-width: 992px) {
+      html #page-team section.partner .frame .seperator {
+        width: 67px;
+        margin: 36px auto; } }
+  html #page-team section.partner .frame .sub-title {
+    font-family: "futura_meduim";
+    font-weight: 100;
+    text-align: center; }
+  html #page-team section.partner .frame .sub-partner {
+    text-align: center;
+    margin-top: 30px; }
+    html #page-team section.partner .frame .sub-partner .partner-title {
+      color: #b9945f; }
+      @media screen and (min-width: 768px) {
+        html #page-team section.partner .frame .sub-partner .partner-title {
+          width: 166px;
+          flex: none; } }
+    html #page-team section.partner .frame .sub-partner .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      html #page-team section.partner .frame .sub-partner .logo-wrap img {
+        margin: 20px; }
+        @media screen and (min-width: 1200px) {
+          html #page-team section.partner .frame .sub-partner .logo-wrap img {
+            margin: 30px; } }
+      html #page-team section.partner .frame .sub-partner .logo-wrap .long-logo {
+        max-width: 462px; }
+      @media screen and (min-width: 768px) {
+        html #page-team section.partner .frame .sub-partner .logo-wrap {
+          flex: 1;
+          justify-content: flex-start; } }
+    @media screen and (min-width: 768px) {
+      html #page-team section.partner .frame .sub-partner {
+        display: flex;
+        align-items: center;
+        margin-top: 80px; } }
+  @media screen and (min-width: 768px) {
+    html #page-team section.partner .frame .sponsor .partner-title {
+      margin-top: 58px; } }
+  @media screen and (min-width: 768px) {
+    html #page-team section.partner .frame .sponsor {
+      align-items: flex-start; } }
+  @media screen and (min-width: 768px) {
+    html #page-team section.partner {
+      margin-top: 100px; } }
+html #page-team footer {
+  margin-top: 100px; }
+  @media screen and (min-width: 768px) {
+    html #page-team footer {
+      margin-top: 200px; } }
 
 /*# sourceMappingURL=style.css.map */

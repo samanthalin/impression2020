@@ -1058,6 +1058,209 @@ html{
 		}
 	}//#page-event
 	#page-team{
-
+		section.title{
+			padding: 40px 0 0 0;
+			h1{
+				@include page-title;
+			}
+		}
+		section.team{
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1090px;
+				.seperator{
+					@include seperator;
+				}
+				.sub-title{
+					font-family: $futura;
+					font-weight: 100;
+					text-align: center;
+				}
+				.intro{
+					text-align: center;
+					line-height: 1.4em;
+					margin-top: 20px;
+				}
+				.member-wrap{
+					.member{
+						text-align: center;
+						margin-top: 30px;
+						.img{
+							width: 250px;
+							height: 250px;
+							margin: auto;
+							margin-bottom: 15px;
+							background-size: cover;
+							&-jaye{
+								background-image: url(../image/team_jaye.png);
+							}
+							&-joyce{
+								background-image: url(../image/team_joyce.png);
+							}
+							&-shengta{
+								background-image: url(../image/team_shengta.png);
+							}
+							&-charlie{
+								background-image: url(../image/team_charlie.png);
+							}
+							@media screen and (min-width: 992px){
+								width: 100%;
+								height: 21vw;
+								@media screen and (min-width: 1200px){
+									height: 220px;
+								}
+							}
+						}
+						.title{
+							font-family: $galano-semibold;
+							color: $theme-brown;
+							font-size: 18px;
+						}
+						.name{
+							font-family: $galano-semibold;
+							font-size: 22px;
+							margin: 5px 0 13px 0;
+						}
+						.mail{
+							color: #8b8b8b;
+							text-decoration: underline;
+							&:hover{
+								color: $theme-blue;
+							}
+						}
+						@media screen and (min-width: 768px) {
+							width: 45%;
+							margin-top: 40px;
+							@media screen and (min-width: 992px) {
+								width: 23%;
+								@media screen and (min-width: 1200px) {
+									width: 220px;
+								}
+							}
+						}
+					}//member
+					@media screen and (min-width: 768px) {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-around;
+						@media screen and (min-width: 992px){
+							justify-content: space-between;
+						}
+					}
+				}//member-wrap
+				.sub-member-wrap{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-around;
+					margin-top: 40px;
+					.sub-member{
+						text-align: center;
+						margin-top: 40px;
+						width: 40%;
+						.title{
+							font-family: $galano-semibold;
+							color: $theme-brown;
+							font-size: 18px;
+							margin-top: 20px;
+						}
+						.name{
+							font-family: $galano-semibold;
+							font-size: 22px;
+							margin: 5px 0 13px 0;
+						}
+						.mail{
+							color: #8b8b8b;
+							text-decoration: underline;
+							&:hover{
+								color: $theme-blue;
+							}
+						}
+						@media screen and (min-width: 768px){
+							width: 33%;
+							@media screen and (min-width: 1200px) {
+								width: auto;
+							}
+						}
+					}
+					@media screen and (min-width: 768px) {
+						justify-content: center;
+						@media screen and (min-width: 1200px) {
+							justify-content: space-between;
+						}
+					}
+				}//sub-member-wrap
+			}//frame	
+		}//team
+		section.partner{
+			width: 90%;
+			margin: auto;
+			max-width: 1090px;
+			margin-top: 60px;
+			.frame{
+				.seperator{
+					@include seperator;
+				}
+				.sub-title{
+					font-family: $futura;
+					font-weight: 100;
+					text-align: center;
+				}
+				.sub-partner{
+					text-align: center;
+					margin-top: 30px;
+					.partner-title{
+						color: #b9945f;
+						@media screen and (min-width: 768px){
+							width: 166px;
+							flex: none;
+						}
+					}
+					.logo-wrap{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex-wrap: wrap;
+						img{
+							margin: 20px;
+							@media screen and (min-width: 1200px) {
+								margin: 30px;
+							}
+						}
+						.long-logo{
+							max-width: 462px;
+						}
+						@media screen and (min-width: 768px){
+							flex: 1;
+							justify-content: flex-start;
+						}
+					}
+					@media screen and (min-width: 768px) {
+						display: flex;
+						align-items: center;
+						margin-top: 80px;
+					}
+				}//sub-partner
+				.sponsor{
+					.partner-title{
+						@media screen and (min-width: 768px){
+							margin-top: 58px; 
+						}
+					}
+					@media screen and (min-width: 768px){
+						align-items: flex-start;
+					}
+				}
+			}//frame
+			@media screen and (min-width: 768px){
+				margin-top: 100px;
+			}
+		}//section.partner
+		footer{
+			margin-top: 100px;
+			@media screen and (min-width: 768px){
+				margin-top: 200px;
+			}
+		}
 	}//#team
 }
