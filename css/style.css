@@ -653,10 +653,10 @@ html body#page-program section.title {
       height: 200px; } }
 html body#page-program section.cat {
   margin-top: 20px; }
-  html body#page-program section.cat:nth-child(3) {
+  html body#page-program section.cat:nth-child(4) {
     margin-top: -10px; }
     @media screen and (min-width: 992px) {
-      html body#page-program section.cat:nth-child(3) {
+      html body#page-program section.cat:nth-child(4) {
         margin-top: -60px; } }
   html body#page-program section.cat-jiang-hu .ticket, html body#page-program section.cat-queer .ticket {
     justify-content: flex-end; }
@@ -708,15 +708,8 @@ html body#page-program section.cat {
           background-image: url(../image/movie/vengeance.png); }
         html body#page-program section.cat .frame .ticket .film-img-b-movie {
           background-image: url(../image/movie/b-movie.png); }
-        html body#page-program section.cat .frame .ticket .film-img-never {
-          background-color: #d0ccc8;
-          color: gray;
-          font-size: 25px;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          html body#page-program section.cat .frame .ticket .film-img-never i {
-            margin-right: 10px; }
+        html body#page-program section.cat .frame .ticket .film-img-Shanghai {
+          background-image: url(../image/movie/Shanghai.png); }
         html body#page-program section.cat .frame .ticket .film-img-talk {
           background-image: url(../image/movie/talk.png); }
         html body#page-program section.cat .frame .ticket .film-img-taipeilove {
@@ -1085,7 +1078,8 @@ html #page-event .event-wrap .frame {
       height: 35px;
       text-align: center;
       line-height: 35px;
-      margin-top: 25px; }
+      margin-top: 25px;
+      transition: all 0.2s ease; }
       html #page-event .event-wrap .frame .event .button i {
         margin-right: 5px; }
       html #page-event .event-wrap .frame .event .button:hover {

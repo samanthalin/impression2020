@@ -752,7 +752,7 @@ html{
 		}
 		section.cat{
 			margin-top: 20px;
-			&:nth-child(3){
+			&:nth-child(4){
 				margin-top: -10px;
 				@media screen and (min-width: 992px) {
 					margin-top: -60px;
@@ -814,16 +814,8 @@ html{
 						&-b-movie{
 							background-image: url(../image/movie/b-movie.png);
 						}
-						&-never{
-							background-color: #d0ccc8;
-							color: gray;
-							font-size: 25px;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							i{
-								margin-right: 10px;
-							}
+						&-Shanghai{
+							background-image: url(../image/movie/Shanghai.png);
 						}
 						&-talk{
 							background-image: url(../image/movie/talk.png);
@@ -1272,6 +1264,7 @@ html{
 						text-align: center;
 						line-height: 35px;
 						margin-top: 25px;
+						transition: all 0.2s ease;
 						i{
 							margin-right: 5px;
 						}
